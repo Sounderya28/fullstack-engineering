@@ -91,7 +91,8 @@ header,
     font-size: large;
 }
 
-.about-right h3 {
+.about-right h3,
+#services h3 {
     font-size: 2rem;
 }
 
@@ -113,6 +114,90 @@ header,
     list-style-type: square;
 }
 
+#services,
+#testimonials,
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 9% 9% 9%;
+    gap: 5%;
+}
+
+#services h3,
+.testimonials-head,
+.conact-head,
+.contact-desc {
+    text-align: center;
+}
+
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5%;
+    margin-top: 2%;
+}
+
+.card {
+    border-radius: 5%;
+}
+
+.card-text {
+    margin-top: 20px;
+    color: var(--subtext-color);
+    font-size: 1.1rem;
+}
+
+.card-img {
+    width: 15%;
+    margin-bottom: 9%;
+}
+
+.carousel {
+    width: 70%;
+}
+
+.carousel-inner {
+    border: 1px solid rgb(167, 167, 167);
+}
+
+.personal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.personal-image {
+    border-radius: 50%;
+    flex: 1;
+}
+
+.personal-image img {
+    width: 10%;
+    border-radius: 50%;
+}
+
+.personal-data {
+    flex: 1;
+}
+
+.contact-form {
+    display: flex;
+}
+
+.contact-phone,
+.contact-email,
+.contact-address {
+    display: flex;
+}
+
+.contact-phone img,
+.contact-email img,
+.contact-address img {
+    width: 15%;
+    object-fit: contain;
+}
 
 @media screen and (max-width:990px) {
 
@@ -148,6 +233,27 @@ header,
     .about-left img {
         margin-top: 2%;
     }
+
+    .service-cards {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 5%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    #services {
+        align-items: flex-start;
+    }
+
+    .service-cards {
+        grid-template-columns: 1fr;
+        gap: 2%;
+    }
+
+    #services h3 {
+        text-align: left;
+    }
+
 }
 
 @media screen and (min-width:1180px) {
@@ -157,7 +263,8 @@ header,
 
     .header-describe,
     .about-desc,
-    .key-values ul {
+    .key-values ul,
+    .testimonials-desc {
         font-size: 1.2rem;
     }
 
@@ -179,6 +286,11 @@ header,
     .key-values p {
         margin-top: 7%;
     }
+
+    .fg-emphasis-secondary,
+    .personal-data {
+        font-size: 1.1rem;
+    }
 }
 
 @media screen and (min-width:2100px) {
@@ -189,7 +301,8 @@ header,
 
     .header-describe,
     .about-desc,
-    .key-values ul {
+    .key-values ul,
+    .testimonials-desc {
         font-size: 1.7rem;
     }
 
@@ -202,12 +315,25 @@ header,
         font-size: medium;
     }
 
-    #about {
+    #about,
+    #services,
+    #testimonials {
         padding: 0 20% 9% 20%;
         gap: 7%;
     }
 
-    .key-values p {
+    .key-values p,
+    .card-text,
+    .fg-emphasis-secondary,
+    .personal-data {
         font-size: 1.5rem;
+    }
+
+    .card-title {
+        font-size: 1.7rem;
+    }
+
+    .service-cards {
+        margin-top: 3%;
     }
 }
