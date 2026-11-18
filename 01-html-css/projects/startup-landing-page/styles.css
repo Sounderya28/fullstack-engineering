@@ -138,12 +138,12 @@ footer {
 .service-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 5%;
+    gap: 40px;
     margin-top: 2%;
 }
 
 .card {
-    border-radius: 5%;
+    border-radius: 15px;
 }
 
 .card-text {
@@ -329,7 +329,7 @@ footer {
 
     .service-cards {
         grid-template-columns: 1fr;
-        gap: 2%;
+        gap: 20px;
     }
 
     #services h3,
