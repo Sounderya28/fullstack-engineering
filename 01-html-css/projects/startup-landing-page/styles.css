@@ -4,7 +4,7 @@
     --secondary-color: rgb(233, 248, 238);
 }
 
-nav {
+.container-fluid {
     margin: 0 9%;
 }
 
@@ -69,7 +69,7 @@ header,
 .about-left img {
     width: 25rem;
     height: 25rem;
-    border-radius: 5%;
+    border-radius: 20px;
 }
 
 #about {
@@ -80,7 +80,7 @@ header,
     margin-top: 5%;
     background-color: var(--primary-color);
     padding: 10px;
-    border-radius: 5%;
+    border-radius: 20px;
 }
 
 .mission-stmt {
@@ -231,6 +231,7 @@ footer {
 
 footer {
     background-color: rgb(248, 248, 248);
+    /* background-color: var(--secondary-color); */
 }
 
 .footer-content {
@@ -389,6 +390,10 @@ footer {
 }
 
 @media screen and (min-width:2100px) {
+    .container-fluid {
+        margin: 0 20%;
+    }
+
     header {
         padding: 9% 20%;
         gap: 7%;
