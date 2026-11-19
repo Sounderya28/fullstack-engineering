@@ -247,18 +247,25 @@ footer {
 }
 
 footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 9% 0% 9%;
+    gap: 50px;
     background-color: rgb(248, 248, 248);
-    /* background-color: var(--secondary-color); */
 }
 
 .footer-content {
     display: flex;
     flex-direction: row;
-    gap: 5%;
+    margin-top: 50px;
+    gap: 40px;
 }
 
 .footer-content h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    margin-bottom: 25px;
 }
 
 .footer-content a {
@@ -268,6 +275,17 @@ footer {
 
 .footer-content li {
     list-style-type: none;
+    margin-left: -30px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.site-about img {
+    margin-bottom: 10px;
+}
+
+.site-about p {
+    font-size: 1rem;
 }
 
 .f-contact-phone,
@@ -275,24 +293,38 @@ footer {
 .f-contact-address {
     display: flex;
     flex-direction: row;
-    gap: 2%;
+    gap: 15px;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.f-contact-phone p,
+.f-contact-email p,
+.f-contact-address p {
+    margin: 0;
+    font-size: 1rem;
 }
 
 .follow-us-links {
     display: flex;
     flex-direction: row;
-    gap: 5%;
+    gap: 10px;
 }
-
 
 .f-contact img {
     width: 1rem;
     object-fit: contain;
+    margin-top: 2%;
 }
 
 .follow-us img {
-    width: 1.5rem;
+    width: 2rem;
     object-fit: contain;
+}
+
+.rights {
+    color: var(--subtext-color);
+    font-size: 1rem;
 }
 
 @media screen and (max-width:990px) {
@@ -334,6 +366,19 @@ footer {
     .service-cards {
         grid-template-columns: repeat(2, 1fr);
         margin-top: 5%;
+    }
+
+    .footer-content {
+        gap: 20px;
+    }
+
+    .f-contact img {
+        margin-top: 1%;
+    }
+
+    .follow-us img {
+        width: 1.5rem;
+        object-fit: contain;
     }
 }
 
@@ -407,7 +452,12 @@ footer {
 
     .contact-label,
     .contact-value,
-    .contact-req label {
+    .contact-req label,
+    .site-about p,
+    .f-contact-phone p,
+    .f-contact-email p,
+    .f-contact-address p,
+    .footer-content li {
         font-size: 1.1rem;
     }
 
@@ -420,6 +470,10 @@ footer {
     .contact-email img,
     .contact-address img {
         width: 12%;
+    }
+
+    .footer-content h3 {
+        font-size: 1.1rem
     }
 }
 
@@ -466,7 +520,12 @@ footer {
     .contact-form,
     .contact-label,
     .contact-value,
-    .contact-req label {
+    .contact-req label,
+    .site-about p,
+    .f-contact-phone p,
+    .f-contact-email p,
+    .f-contact-address p,
+    .footer-content li {
         font-size: 1.5rem;
     }
 
@@ -483,6 +542,25 @@ footer {
     .email,
     .address {
         gap: 10px;
+    }
+
+    footer {
+        padding: 0 20% 0% 20%;
+        gap: 50px;
+    }
+
+    .f-contact img {
+        width: 1.5rem;
+        object-fit: contain;
+    }
+
+    .follow-us img {
+        width: 2.5rem;
+        object-fit: contain;
+    }
+
+    .rights {
+        font-size: 1.2rem;
     }
 
 }
