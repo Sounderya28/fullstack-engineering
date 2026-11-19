@@ -194,6 +194,8 @@ footer {
 .contact-email,
 .contact-address {
     display: flex;
+    margin-bottom: 10%;
+    align-items: center;
 }
 
 .contact-phone img,
@@ -203,8 +205,22 @@ footer {
     object-fit: contain;
 }
 
+.phone,
+.email,
+.address {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contact-label,
 .contact-value {
-    font-weight: 700;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.contact-value {
+    font-weight: 600;
 }
 
 .contact-details {
@@ -223,6 +239,7 @@ footer {
     border: 1px solid gainsboro;
     outline: none;
     padding: 2%;
+    border-radius: 10px
 }
 
 .send-message-btn {
@@ -340,6 +357,13 @@ footer {
     .contact-form {
         display: flex;
         flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .contact-req input,
+    .contact-req textarea {
+        margin-bottom: 20px;
+        margin-top: 5px;
     }
 
 }
@@ -377,6 +401,16 @@ footer {
         margin-top: 7%;
     }
 
+    .contact-form {
+        margin-top: 2%;
+    }
+
+    .contact-label,
+    .contact-value,
+    .contact-req label {
+        font-size: 1.1rem;
+    }
+
     .fg-emphasis-secondary,
     .personal-data {
         font-size: 1.1rem;
@@ -407,7 +441,8 @@ footer {
         font-size: 1.7rem;
     }
 
-    .header-content button {
+    .header-content button,
+    .contact-req button {
         padding: 20px;
         font-size: large;
     }
@@ -428,7 +463,10 @@ footer {
     .card-text,
     .fg-emphasis-secondary,
     .personal-data,
-    .contact-form {
+    .contact-form,
+    .contact-label,
+    .contact-value,
+    .contact-req label {
         font-size: 1.5rem;
     }
 
@@ -440,4 +478,11 @@ footer {
     .contact-form {
         margin-top: 3%;
     }
+
+    .phone,
+    .email,
+    .address {
+        gap: 10px;
+    }
+
 }
