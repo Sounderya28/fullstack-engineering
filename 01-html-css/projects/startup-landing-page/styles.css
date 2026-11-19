@@ -460,12 +460,16 @@ footer {
         min-height: 350px;
     }
 
-    #testimonials{
+    #testimonials {
         align-items: flex-start;
     }
 
-    #carouselExampleContent{
+    #carouselExampleContent {
         align-self: center;
+    }
+
+    .carousel {
+        width: 100%;
     }
 }
 
