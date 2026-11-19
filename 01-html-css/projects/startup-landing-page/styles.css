@@ -161,28 +161,45 @@ footer {
     width: 70%;
 }
 
+.carousel-item {
+    padding: 20px;
+}
+
 .carousel-inner {
-    border: 1px solid rgb(167, 167, 167);
+    border: 1px solid rgb(174, 171, 171);
+    margin-bottom: 10px;
 }
 
 .personal {
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 20px;
 }
 
-.personal-image {
-    border-radius: 50%;
-    flex: 1;
+.personal-data p {
+    margin: 0;
 }
 
-.personal-image img {
+.personal img {
     width: 10%;
     border-radius: 50%;
 }
 
-.personal-data {
-    flex: 1;
+.btn-icon {
+    background-color: transparent;
+    border: none;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black;
+    border-radius: 50%;
+    background-size: 50%;
+}
+
+.name {
+    font-weight: 700;
 }
 
 .contact-form {
@@ -327,6 +344,19 @@ footer {
     font-size: 1rem;
 }
 
+.custom-height {
+    min-height: 300px
+}
+
+.personal-data {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+
 @media screen and (max-width:990px) {
 
     header,
@@ -381,6 +411,7 @@ footer {
         width: 1.5rem;
         object-fit: contain;
     }
+
 }
 
 @media screen and (max-width:500px) {
@@ -417,6 +448,17 @@ footer {
         margin-top: 5px;
     }
 
+    .personal img {
+        width: 20%;
+    }
+
+    .testimonials-desc {
+        font-size: 1.1rem;
+    }
+
+    .custom-height {
+        min-height: 350px;
+    }
 }
 
 @media screen and (min-width:1180px) {
@@ -428,7 +470,8 @@ footer {
     .about-desc,
     .key-values ul,
     .testimonials-desc,
-    .contact-desc {
+    .contact-desc,
+    .carousel-item {
         font-size: 1.2rem;
     }
 
@@ -467,11 +510,6 @@ footer {
         font-size: 1.1rem;
     }
 
-    .fg-emphasis-secondary,
-    .personal-data {
-        font-size: 1.1rem;
-    }
-
     .contact-phone img,
     .contact-email img,
     .contact-address img {
@@ -480,6 +518,11 @@ footer {
 
     .footer-content h3 {
         font-size: 1.1rem
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        padding: 20px;
     }
 }
 
@@ -497,7 +540,8 @@ footer {
     .about-desc,
     .key-values ul,
     .testimonials-desc,
-    .contact-desc {
+    .contact-desc,
+    .carousel-item {
         font-size: 1.7rem;
     }
 
@@ -521,8 +565,6 @@ footer {
 
     .key-values p,
     .card-text,
-    .fg-emphasis-secondary,
-    .personal-data,
     .contact-form,
     .contact-label,
     .contact-value,
@@ -538,6 +580,16 @@ footer {
     .card-title {
         font-size: 1.7rem;
     }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        padding: 30px;
+    }
+
+    .custom-height {
+        min-height: 400px
+    }
+
 
     .service-cards,
     .contact-form {
