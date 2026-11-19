@@ -330,8 +330,7 @@ footer {
 @media screen and (max-width:990px) {
 
     header,
-    #about,
-    .footer-content {
+    #about {
         display: flex;
         flex-direction: column;
     }
@@ -369,7 +368,9 @@ footer {
     }
 
     .footer-content {
-        gap: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
     }
 
     .f-contact img {
@@ -387,6 +388,11 @@ footer {
     #services,
     #contact {
         align-items: flex-start;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
     }
 
     .service-cards {
