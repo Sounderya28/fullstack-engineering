@@ -1,0 +1,675 @@
+:root {
+    --primary-color: #215C5C;
+    --subtext-color: rgb(67, 67, 67);
+    --secondary-color: rgb(233, 248, 238);
+}
+
+.container-fluid {
+    margin: 0 9%;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 999;
+}
+
+.btn-custom,
+.btn-custom:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+header,
+#about {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 9%;
+    gap: 5%;
+}
+
+.header-content h2 {
+    font-size: 3rem;
+}
+
+.header-describe {
+    font-size: 1.2rem;
+    color: var(--subtext-color);
+    margin-top: 5%;
+}
+
+.header-tag {
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    padding: 2px 5px;
+    color: var(--primary-color);
+    font-size: small;
+    width: fit-content;
+}
+
+.header-content button,
+.contact-req button {
+    outline: none;
+    margin-top: 5%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.get-started-btn,
+.send-message-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: 1px solid var(--primary-color);
+    font-weight: 600;
+}
+
+.learn-more-btn {
+    background-color: transparent;
+    color: rgb(0, 30, 0);
+    border: 1px solid rgb(222, 221, 221);
+    margin-left: 10px;
+}
+
+.header-img img,
+.about-left img {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 20px;
+}
+
+#about {
+    padding: 0 9% 9% 9%;
+}
+
+.mission-container {
+    margin-top: 5%;
+    background-color: var(--primary-color);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.mission-stmt {
+    color: rgb(223, 223, 186)
+}
+
+.mission-desc {
+    color: white;
+    margin-right: 10%;
+    font-size: large;
+}
+
+.about-right h3,
+#services h3 {
+    font-size: 2rem;
+}
+
+.about-desc {
+    font-size: 1.1rem;
+    color: var(--subtext-color);
+    margin-top: 5%;
+}
+
+.key-values p {
+    font-weight: bold;
+}
+
+.key-values ul {
+    display: flex;
+    gap: 10%;
+    flex-wrap: wrap;
+    color: var(--subtext-color);
+    list-style-type: square;
+}
+
+#services,
+#testimonials,
+#contact,
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 9% 9% 9%;
+    gap: 5%;
+}
+
+#services h3,
+.conact-head,
+.contact-desc {
+    text-align: center;
+}
+
+.service-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 2%;
+}
+
+.card {
+    border-radius: 15px;
+}
+
+.card-text {
+    margin-top: 20px;
+    color: var(--subtext-color);
+    font-size: 1.1rem;
+}
+
+.card-img {
+    width: 15%;
+    margin-bottom: 9%;
+}
+
+.carousel {
+    width: 70%;
+}
+
+.carousel-item {
+    padding: 20px;
+}
+
+.carousel-inner {
+    border: 1px solid rgb(174, 171, 171);
+    margin-bottom: 10px;
+}
+
+.personal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 3%;
+}
+
+.personal-data p {
+    margin: 0;
+}
+
+.personal img {
+    width: 10%;
+    border-radius: 50%;
+}
+
+.btn-icon {
+    background-color: transparent;
+    border: none;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black;
+    border-radius: 50%;
+    background-size: 50%;
+}
+
+.name {
+    font-weight: 700;
+}
+
+.contact-form {
+    display: flex;
+    gap: 5%;
+}
+
+.contact-phone,
+.contact-email,
+.contact-address {
+    display: flex;
+    margin-bottom: 10%;
+    align-items: center;
+}
+
+.contact-phone img,
+.contact-email img,
+.contact-address img {
+    width: 15%;
+    object-fit: contain;
+}
+
+.phone,
+.email,
+.address {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.contact-label,
+.contact-value {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.contact-value {
+    font-weight: 600;
+}
+
+.contact-details {
+    flex: 1;
+}
+
+.contact-req {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+}
+
+.contact-req input,
+.contact-req textarea {
+    border: 1px solid gainsboro;
+    outline: none;
+    padding: 2%;
+    border-radius: 10px
+}
+
+.send-message-btn {
+    align-self: flex-start;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 9% 0% 9%;
+    gap: 50px;
+    background-color: rgb(248, 248, 248);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+    gap: 40px;
+}
+
+.footer-content h3 {
+    font-size: 1rem;
+    margin-bottom: 25px;
+}
+
+.footer-content a {
+    text-decoration: none;
+    color: var(--subtext-color);
+}
+
+.footer-content li {
+    list-style-type: none;
+    margin-left: -30px;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+.site-about img {
+    margin-bottom: 10px;
+}
+
+.site-about p {
+    font-size: 1rem;
+}
+
+.f-contact-phone,
+.f-contact-email,
+.f-contact-address {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.f-contact-phone p,
+.f-contact-email p,
+.f-contact-address p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.follow-us-links {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.f-contact img {
+    width: 1rem;
+    object-fit: contain;
+    margin-top: 2%;
+}
+
+.follow-us img {
+    width: 2rem;
+    object-fit: contain;
+}
+
+.rights {
+    color: var(--subtext-color);
+    font-size: 1rem;
+}
+
+.custom-height {
+    min-height: 300px
+}
+
+.personal-data {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+#home,
+#about,
+#services,
+#testimonials,
+#contact {
+    scroll-margin-top: 70px;
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--primary-color);
+}
+
+@media screen and (max-width:990px) {
+
+    header,
+    #about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .header-img img,
+    .about-left img {
+        width: 100%;
+        height: 100%;
+        margin-top: 5%;
+    }
+
+    .about-right {
+        order: 1;
+    }
+
+    .about-left {
+        order: 2
+    }
+
+    .key-values p {
+        margin-top: 2%;
+    }
+
+    .about-left img {
+        margin-top: 2%;
+    }
+
+    .service-cards {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 5%;
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+    }
+
+    .f-contact img {
+        margin-top: 1%;
+    }
+
+    .follow-us img {
+        width: 1.5rem;
+        object-fit: contain;
+    }
+
+    #home,
+    #about,
+    #services,
+    #testimonials,
+    #contact {
+        scroll-margin-top: 350px;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+
+    #services,
+    #contact {
+        align-items: flex-start;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .service-cards {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    #services h3,
+    .contact-desc {
+        text-align: left;
+    }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .contact-req input,
+    .contact-req textarea {
+        margin-bottom: 20px;
+        margin-top: 5px;
+    }
+
+    .personal img {
+        width: 20%;
+    }
+
+    .testimonials-desc {
+        font-size: 1.1rem;
+    }
+
+    .custom-height {
+        min-height: 350px;
+    }
+
+    #testimonials {
+        align-items: flex-start;
+    }
+
+    #carouselExampleContent {
+        align-self: center;
+    }
+
+    .carousel {
+        width: 100%;
+    }
+
+    #home,
+    #about,
+    #services,
+    #testimonials,
+    #contact {
+        scroll-margin-top: 350px;
+    }
+}
+
+@media screen and (min-width:1180px) {
+    .header-content h2 {
+        font-size: 3.2rem;
+    }
+
+    .header-describe,
+    .about-desc,
+    .key-values ul,
+    .testimonials-desc,
+    .contact-desc,
+    .carousel-item {
+        font-size: 1.2rem;
+    }
+
+    .header-content button,
+    .contact-req button {
+        padding: 15px;
+        font-size: medium;
+    }
+
+    .about-right h3 {
+        font-size: 2.3rem;
+    }
+
+    .header-img img,
+    .about-left img {
+        width: 35rem;
+        height: 35rem;
+    }
+
+    .key-values p {
+        margin-top: 7%;
+    }
+
+    .contact-form {
+        margin-top: 2%;
+    }
+
+    .contact-label,
+    .contact-value,
+    .contact-req label,
+    .site-about p,
+    .f-contact-phone p,
+    .f-contact-email p,
+    .f-contact-address p,
+    .footer-content li {
+        font-size: 1.1rem;
+    }
+
+    .contact-phone img,
+    .contact-email img,
+    .contact-address img {
+        width: 12%;
+    }
+
+    .footer-content h3 {
+        font-size: 1.1rem
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        padding: 20px;
+    }
+
+    .personal img {
+        width: 7%;
+    }
+
+}
+
+@media screen and (min-width:2100px) {
+    .container-fluid {
+        margin: 0 20%;
+    }
+
+    header {
+        padding: 9% 20%;
+        gap: 7%;
+    }
+
+    .header-describe,
+    .about-desc,
+    .key-values ul,
+    .testimonials-desc,
+    .contact-desc,
+    .carousel-item {
+        font-size: 1.7rem;
+    }
+
+    .header-content button,
+    .contact-req button {
+        padding: 20px;
+        font-size: large;
+    }
+
+    .header-tag {
+        font-size: medium;
+    }
+
+    #about,
+    #services,
+    #testimonials,
+    #contact {
+        padding: 0 20% 9% 20%;
+        gap: 7%;
+    }
+
+    .key-values p,
+    .card-text,
+    .contact-form,
+    .contact-label,
+    .contact-value,
+    .contact-req label,
+    .site-about p,
+    .f-contact-phone p,
+    .f-contact-email p,
+    .f-contact-address p,
+    .footer-content li {
+        font-size: 1.5rem;
+    }
+
+    .card-title {
+        font-size: 1.7rem;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        padding: 30px;
+    }
+
+    .custom-height {
+        min-height: 400px
+    }
+
+
+    .service-cards,
+    .contact-form {
+        margin-top: 3%;
+    }
+
+    .phone,
+    .email,
+    .address {
+        gap: 10px;
+    }
+
+    footer {
+        padding: 0 20% 0% 20%;
+        gap: 50px;
+    }
+
+    .f-contact img {
+        width: 1.5rem;
+        object-fit: contain;
+    }
+
+    .follow-us img {
+        width: 2.5rem;
+        object-fit: contain;
+    }
+
+    .rights {
+        font-size: 1.2rem;
+    }
+
+}
