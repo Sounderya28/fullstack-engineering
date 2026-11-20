@@ -371,6 +371,10 @@ footer {
     scroll-margin-top: 70px;
 }
 
+.navbar-nav .nav-link.active {
+    color: var(--primary-color);
+}
+
 @media screen and (max-width:990px) {
 
     header,
@@ -424,6 +428,14 @@ footer {
     .follow-us img {
         width: 1.5rem;
         object-fit: contain;
+    }
+
+    #home,
+    #about,
+    #services,
+    #testimonials,
+    #contact {
+        scroll-margin-top: 350px;
     }
 
 }
@@ -484,6 +496,14 @@ footer {
 
     .carousel {
         width: 100%;
+    }
+
+    #home,
+    #about,
+    #services,
+    #testimonials,
+    #contact {
+        scroll-margin-top: 350px;
     }
 }
 
