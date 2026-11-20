@@ -17,7 +17,7 @@ jobs:
 
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url }}startup-landing-page/
 
     steps:
       - name: Checkout repository
@@ -26,10 +26,22 @@ jobs:
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
-      - name: Upload startup landing page
+      - name: Assemble site
+        run: |
+          mkdir -p _site/startup-landing-page
+          cp -r 01-html-css/projects/startup-landing-page/. _site/startup-landing-page/
+          touch _site/.nojekyll
+          cat > _site/index.html <<'EOF'
+          <!DOCTYPE html>
+          <meta http-equiv="refresh" content="0; url=./startup-landing-page/">
+          <a href="./startup-landing-page/">Go to Startup Landing Page</a>
+          EOF
+          ls -R _site
+
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          path: ./01-html-css/projects/startup-landing-page
+          path: ./_site
 
       - name: Deploy to GitHub Pages
         id: deployment
