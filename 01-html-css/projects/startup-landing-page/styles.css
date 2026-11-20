@@ -8,6 +8,13 @@
     margin: 0 9%;
 }
 
+.navbar {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 999;
+}
+
 .btn-custom,
 .btn-custom:hover {
     background-color: var(--primary-color);
@@ -356,6 +363,13 @@ footer {
     text-align: left;
 }
 
+#home,
+#about,
+#services,
+#testimonials,
+#contact {
+    scroll-margin-top: 70px;
+}
 
 @media screen and (max-width:990px) {
 
