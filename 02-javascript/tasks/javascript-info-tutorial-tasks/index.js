@@ -191,3 +191,41 @@
 //   isprime = true;
 // }
 
+// Find whether a given number is prime or not.
+
+// let n = +prompt("Enter a number to check if it is a prime or not", 0);
+// let isprime = true;
+
+// if (n <= 1) {
+//   alert(`${n} is not a prime number`);
+// } else {
+//   for (i = 2; i <= n ** 0.5; i++) {
+//     if (n % i === 0) {
+//       isprime = false;
+//       break;
+//     }
+//   }
+//   if (isprime) {
+//     alert(`${n} is a prime number`);
+//   } else {
+//     alert(`${n} is not a prime number`);
+//   }
+// }
+
+// Count how many prime numbers exist between 1 and 100.
+
+// let count = 0,
+//   isprime = true;
+// for (let i = 2; i <= 100; i++) {
+//   for (let j = 2; j <= i ** 0.5; j++) {
+//     if (i % j === 0) {
+//       isprime = false;
+//       break;
+//     }
+//   }
+//   if (isprime) {
+//     count += 1;
+//   }
+//   isprime = true;
+// }
+// alert(count);
