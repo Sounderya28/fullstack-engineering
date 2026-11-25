@@ -174,3 +174,20 @@
 // do {
 //   num = +prompt("Enter a number", 0);
 // } while (num <= 100 && num);
+
+// Output prime numbers
+
+// let isprime = true;
+// let n = prompt("Enter a number", 0);
+
+// for (let i = 2; i <= n; i++) {
+//   for (let j = 2; j < i; j++) {
+//     if (i % j === 0) {
+//       isprime = false;
+//       break;
+//     }
+//   }
+//   if (isprime) alert(i);
+//   isprime = true;
+// }
+
