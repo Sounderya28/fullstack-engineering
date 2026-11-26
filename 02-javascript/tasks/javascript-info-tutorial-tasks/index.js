@@ -292,3 +292,50 @@
 //     alert("2,3");
 //     break;
 // }
+
+// Rewrite the function using "?" and "||"
+
+// function checkAge(age) {
+//   if (age > 18) {
+//     return true;
+//   } else {
+//     return confirm("Did parents allow you?");
+//   }
+// }
+
+// function checkAge(age) {
+//   return age > 18 ? true : confirm("Did parents allow you?");
+// }
+
+// checkAge(19);
+
+// function checkAge(age) {
+//   return age > 18 || confirm("Did parents allow you?");
+// }
+
+// checkAge(1);
+
+// Function min(a,b)
+
+// function min(a, b) {
+//   if (a < b) return a;
+//   return b;
+// }
+
+// let a = +prompt("Enter the number a", 0);
+// let b = +prompt("Enter the number b", 0);
+
+// let result = min(a, b);
+// alert(result);
+
+// function pow(x,n)
+
+// function pow(x, n) {
+//   return x ** n;
+// }
+
+// let x = +prompt("x?", 0);
+// let n = +prompt("n?", 0);
+
+// let result = pow(x, n);
+// alert(result);
